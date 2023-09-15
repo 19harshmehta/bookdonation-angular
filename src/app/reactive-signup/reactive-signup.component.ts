@@ -14,21 +14,7 @@ export class ReactiveSignupComponent {
     
     data:any
     myForm : FormGroup
-    // firstname:String=""
-    // lastname:String=""
-    // email:String=""
-    // password:String=""
-    // phonenumber:Number= 0
-    // state:String=""
-    // city:String=""
-    // address:String= ""
-    // pincode:Number=0
-    // profileurl:String=""
-    // activeInd:String=""
-    // createdAt:String=""
-    // role:String=""
-
-
+    
 
     constructor(private toastr: ToastrService,private router:Router, private httpClient:HttpClient){
      

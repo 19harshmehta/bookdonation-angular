@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"></div>
+
+            <h2>List Users</h2>
+            <table border="1" *ngIf="category" class="table table-dashed table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>UserId</th>
+                        <th>categoryName</th>    
+                        <th>Action</th> 
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                        <tr *ngFor="let category of category">
+                            <td>{{category._id}}</td>
+                            <td>{{category.categoryName}}</td>
+                        </tr>
+                </tbody>
+            </table> 
+    </div>
+ </div>
+ 

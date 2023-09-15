@@ -15,6 +15,9 @@ import { LoginComponent } from './login/login.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { ListusersComponent } from './listusers/listusers.component';
+import { AddcategoryComponent } from './admin-dashboard/addcategory/addcategory.component';
+import { ListcategoriesComponent } from './admin-dashboard/listcategories/listcategories.component';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +27,8 @@ import { ListusersComponent } from './listusers/listusers.component';
     UserDashboardComponent,
     AdminDashboardComponent,
     ListusersComponent,
+    AddcategoryComponent,
+    ListcategoriesComponent,
 
   ],
   imports: [
