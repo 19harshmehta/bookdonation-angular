@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"></div>
+
+            <h2>List Items</h2>
+            <table border="1" *ngIf="items" class="table table-dashed table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>ItemId</th>
+                        <th>Item Name</th>
+                        <th>categoryName</th>     
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                        <tr *ngFor="let item of items">
+                            <td>{{item._id}}</td>
+                            <td>{{item.itemName}}</td>
+                            <td>{{item.categoryId}}</td>
+
+                        </tr>
+                </tbody>
+            </table> 
+    </div>
+ </div>
+ 

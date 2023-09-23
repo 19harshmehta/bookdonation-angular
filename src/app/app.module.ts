@@ -17,6 +17,8 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { ListusersComponent } from './listusers/listusers.component';
 import { AddcategoryComponent } from './admin-dashboard/addcategory/addcategory.component';
 import { ListcategoriesComponent } from './admin-dashboard/listcategories/listcategories.component';
+import { AdditemComponent } from './admin-dashboard/additem/additem.component';
+import { ListitemsComponent } from './admin-dashboard/listitems/listitems.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { ListcategoriesComponent } from './admin-dashboard/listcategories/listca
     ListusersComponent,
     AddcategoryComponent,
     ListcategoriesComponent,
+    AdditemComponent,
+    ListitemsComponent,
 
   ],
   imports: [

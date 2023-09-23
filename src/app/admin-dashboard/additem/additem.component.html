@@ -1,0 +1,29 @@
+<form [formGroup]="myform" (ngSubmit)="addItem()"> 
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-primary">Add Item Form</h2>
+                
+                <!-- Item -->
+
+                <div class="mb-3">
+                    <label for="itemName" class="form-label">Item Name: </label>
+                    <input type="text" formControlName="itemName" id="itemName" class="form-control">
+                <span class="error" *ngIf="!myform.get('itemName')?.valid && myform.get('itemName')?.touched">
+                    <span class="error" *ngIf="myform.get('itemName')?.hasError('required')">Please Enter Item name</span>
+                </span> 
+            </div>
+            <div class="mb-3">
+                <label for="categoryId" class="form-label">Category:</label>
+                <select formControlName="categoryId" id="categoryId" class="form-control">
+                    <option value="Books">Books</option>
+                    <option value="Cloths">Clothes</option>
+                    <option value="computer">computer</option>
+                </select>
+            </div>
+
+                <input type="submit" value="Add" class="btn btn-primary"/>
+            </div>
+        </div>
+    </div>
+    </form>

@@ -17,7 +17,7 @@ export class ListcategoriesComponent
     }
     getAllCategories()
     {
-      console.log("List User Api Called");
+      console.log("List Categories Api Called");
 
       this.adminService.getAllCategories().subscribe(resp=>{
         this.apiResponce = resp 

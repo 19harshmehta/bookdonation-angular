@@ -13,5 +13,11 @@ export class AdminService {
     return this.httpClient.get("https://bookdonationapi-dkhq.onrender.com/getallcategory");
   }
 
+  getAllItems():Observable<any>
+  {
+    return this.httpClient.get("https://bookdonationapi-dkhq.onrender.com/getallitems");
+
+  }
+
 
 }

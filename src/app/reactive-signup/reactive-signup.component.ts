@@ -53,7 +53,7 @@ export class ReactiveSignupComponent {
         "activeInd": "0",
         "createdAt": " fghdgh",
         "profileUrl": "hdthf ",
-        "role": "admin",
+        "role": "user",
       }
         this.httpClient.post("https://bookdonationapi-dkhq.onrender.com/signup",data).subscribe(resp=>{
         this.data = resp
