@@ -18,7 +18,7 @@ export class ListitemsComponent
   }
   getAllItems()
   {
-    console.log("List Categories Api Called");
+    console.log("List items Api Called");
 
       this.adminService.getAllItems().subscribe(resp=>{
         this.apiResponce = resp 

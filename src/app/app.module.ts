@@ -19,6 +19,8 @@ import { AddcategoryComponent } from './admin-dashboard/addcategory/addcategory.
 import { ListcategoriesComponent } from './admin-dashboard/listcategories/listcategories.component';
 import { AdditemComponent } from './admin-dashboard/additem/additem.component';
 import { ListitemsComponent } from './admin-dashboard/listitems/listitems.component';
+import { CreateDonationComponent } from './user-dashboard/create-donation/create-donation.component';
+import { ListDonationsComponent } from './user-dashboard/list-donations/list-donations.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { ListitemsComponent } from './admin-dashboard/listitems/listitems.compon
     ListcategoriesComponent,
     AdditemComponent,
     ListitemsComponent,
+    CreateDonationComponent,
+    ListDonationsComponent,
 
   ],
   imports: [

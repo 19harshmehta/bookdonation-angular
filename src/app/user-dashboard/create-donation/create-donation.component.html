@@ -1,0 +1,58 @@
+<a routerLink="/login">Login</a>
+
+<form [formGroup]="myForm" (ngSubmit)="saveDonation()"> 
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-primary">Donation Form</h2>
+                <!-- Title -->
+                <div class="mb-3">
+                    
+                    <label for="title" class="form-label">Donation Title</label>
+                    <input type="text" formControlName="title" id="title" class="form-control">
+                    <span class="error" *ngIf="!myForm.get('title')?.valid && myForm.get('title')?.touched">Please Enter title</span> 
+                </div>
+                <!-- Enter Keywords -->
+
+                <div class="mb-3">
+                    
+                    <label for="keywords" class="form-label">Keywords :</label>
+                    <input type="text" formControlName="keywords" id="keywords" class="form-control">
+                    <span class="error" *ngIf="!myForm.get('keywords')?.valid && myForm.get('keywords')?.touched">Please Enter keywords</span> 
+                </div>
+                <!-- Description -->
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <input type="text" formControlName="description" id="description" class="form-control">
+                    <span class="error" *ngIf="!myForm.get('description')?.valid && myForm.get('description')?.touched">
+                    <span class="error" *ngIf="myForm.get('description')?.hasError('required')">Please Enter description</span>
+                    <!-- <span class="error"*ngIf="myForm.get('email')?.hasError('emailInvalid')">Please Enter valid Email</span> -->
+                    </span> 
+                
+                </div>
+
+                <!-- DonationDate -->
+
+                <div class="mb-3">
+                    <label for="donationDate" class="form-label">Donation Date</label>
+                    <input type="date" formControlName="donationDate" id="donationDate" class="form-control">
+                    <span class="error" *ngIf="!myForm.get('donationDate')?.valid && myForm.get('donationDate')?.touched">
+                        <span class="error" *ngIf="myForm.get('donationDate')?.hasError('required')">Please Enter Donation Date</span>
+                    </span> 
+                
+                </div>
+                
+                <div class="mb-3">
+                    <label for="itemName" class="form-label">Item Name:</label>
+                    <select formControlName="itemName" id="itemName" class="form-control">
+                        <option *ngFor="let item of items" value={{item.itemName}}>{{item.itemName}}</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Create Donation" class="btn btn-primary"/>
+            </div>
+        </div>
+    </div>
+    </form>
+     

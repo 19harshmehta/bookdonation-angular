@@ -9,6 +9,9 @@ import { AddcategoryComponent } from './admin-dashboard/addcategory/addcategory.
 import { ListcategoriesComponent } from './admin-dashboard/listcategories/listcategories.component';
 import { AdditemComponent } from './admin-dashboard/additem/additem.component';
 import { ListitemsComponent } from './admin-dashboard/listitems/listitems.component';
+import { CreateDonationComponent } from './user-dashboard/create-donation/create-donation.component';
+
+
 
 const routes: Routes = [
   {path:"signup",component:ReactiveSignupComponent},
@@ -20,7 +23,8 @@ const routes: Routes = [
   {path:"addcategory",component:AddcategoryComponent},
   {path:"listcategories",component:ListcategoriesComponent},
   {path:"additem",component:AdditemComponent},
-  {path:"listitems",component:ListitemsComponent}
+  {path:"listitems",component:ListitemsComponent},
+  {path:"createdonation",component:CreateDonationComponent}
 ];
 
 @NgModule({
