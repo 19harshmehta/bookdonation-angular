@@ -1,1 +1,33 @@
-<p>list-donations works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"></div>
+
+            <h2>List Donation</h2>
+            <table border="1" *ngIf="donations" class="table table-dashed table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>DonationId</th>
+                        <th>Donation Date</th>
+                        <th>Title</th>
+                        <th>keywords</th>        
+                        <th>description</th>        
+
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                        <tr *ngFor="let donation of donations">
+                            <td>{{donation._id}}</td>
+                            <td>{{donation.donationDate}}</td>
+                            <td>{{donation.title}}</td>
+                            <td>{{donation.keywords}}</td>
+                            <td>{{donation.description}}</td>
+
+                        </tr>
+                </tbody>
+            </table> 
+    </div>
+ </div>
+ 

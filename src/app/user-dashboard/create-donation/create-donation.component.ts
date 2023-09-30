@@ -57,7 +57,7 @@ export class CreateDonationComponent
        }else if(this.data.rcode == 200)
        {
         this.toastr.success(this.data.msg,"",{timeOut:3000}) 
-        // this.router.navigateByUrl("/listitems")
+        this.router.navigateByUrl("/listdonation")
 
        }
      },err=>{

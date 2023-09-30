@@ -11,4 +11,11 @@ export class UserService {
   {
     return this.httpClient.get("https://bookdonationapi-dkhq.onrender.com/getallusers");
   }
+
+  getAllDonation():Observable<any>
+  {
+    return this.httpClient.get("https://bookdonationapi-dkhq.onrender.com/getalldonation");
+  }
+
+
 }

@@ -18,7 +18,23 @@ export class AdditemComponent
       itemName : new FormControl("",[Validators.required]) ,
       categoryId : new FormControl("",[Validators.required])
     })
+
+    this.listCategryName();
   }
+
+  apiResponce:any={}
+  categories:Array<any>=[]
+  listCategryName()
+  {
+    this.httpClient.get("https://bookdonationapi-dkhq.onrender.com/getallcategory").subscribe(resp=>{
+      this.apiResponce = resp 
+    
+      this.categories=this.apiResponce.data 
+    },err=>{
+
+    }) 
+  }
+
 
   addItem()
   {

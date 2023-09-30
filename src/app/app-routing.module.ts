@@ -10,6 +10,7 @@ import { ListcategoriesComponent } from './admin-dashboard/listcategories/listca
 import { AdditemComponent } from './admin-dashboard/additem/additem.component';
 import { ListitemsComponent } from './admin-dashboard/listitems/listitems.component';
 import { CreateDonationComponent } from './user-dashboard/create-donation/create-donation.component';
+import { ListDonationsComponent } from './user-dashboard/list-donations/list-donations.component';
 
 
 
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path:"listcategories",component:ListcategoriesComponent},
   {path:"additem",component:AdditemComponent},
   {path:"listitems",component:ListitemsComponent},
-  {path:"createdonation",component:CreateDonationComponent}
+  {path:"createdonation",component:CreateDonationComponent},
+  {path:"listdonation",component:ListDonationsComponent}
 ];
 
 @NgModule({
